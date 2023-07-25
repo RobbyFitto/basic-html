@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar HTML</title>
+    <link rel="stylesheet" href="stylehtml.css" />
+  </head>
+  <body>
+    <header>HTML Dasar</header>
+    <nav id="navbar">
+      <ul>
+        <li><a class="nav-list" href="#Pendahuluan">Pendahuluan</a></li>
+        <li><a class="nav-list" href="#Hello-World">Hello World</a></li>
+        <li><a class="nav-list" href="#Code-Editor">Code Editor</a></li>
+        <li><a class="nav-list" href="#Tag">Tag</a></li>
+        <li><a class="nav-list" href="#Paragraf">Paragraf</a></li>
+
+        <li><a class="nav-list" href="#Heading">Heading</a></li>
+        <li><a class="nav-list" href="#List">List</a></li>
+        <li><a class="nav-list" href="#Image">Image</a></li>
+        <li><a class="nav-list" href="#Table">Table</a></li>
+        <li><a class="nav-list" href="#Hyperlink">Hyperlink</a></li>
+
+        <li><a class="nav-list" href="#Form">Form</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Pendahuluan">
+        <header>Pendahuluan</header>
+        <article>
+          <p>
+            <b
+              >Kali ini saya akan membuat documentation tentang html, yang dimana saya tau diri, saya masih banyak salah dalam penulisan html, dan ini menjadi pengingat dan basic. Sehingga tidak ada penggunaan CSS maupun JavaScript, mungkin
+              ada di documentation yang terpisah. Terimakasih telah membaca ^-^</b
+            >
+          </p>
+          <p>
+            HTML atau Hypertext Markup Language merupakan bahasa markup yang dimana didalamnya itu terdapat serangkaian markup atau tag-tag, dengan fungsi untuk kasih tau browser, bagaimana sebuah kontent akan ditampilkan seperti text,
+            paragraf ataupun yang lain.
+          </p>
+          <p>
+            HTML pertama kali diciptakan oleh TIm Berners Lee, selain membuat html, beliau juga menemukan banyak hal seperti WWW, HTTP, Browser dan lain-lain. Beliau menjadi direktur salah satu organisasi yang bernama World Wide Web
+            Consortium / W3C. Kegiatan utama W3C sangat mulia, yaitu dimana membuat peraturan dan standar perkembangan web dalam jangka panjang. W3C tidak ada HQ tetapi terdiri dari beberapa gabungan institusi seperti MIT, France, Jepang
+            dan Cina.
+          </p>
+          <p>
+            Jika ada tag baru, tag lama yang hilang itu berasal dari W3C berdasarkan peraturan yang baru dan diterapkan di web browser, sehingga web browser perlu diupdate untuk menikmati perkembangan yang ada. Bisa dilihat di Evolution of
+            The Web (saat ini gabisa diakses), yang dimana menjelaskan bahwa dimulai html ver 1, browser pertama, teknlogi dan perkembangan hingga sampai saat ini.
+          </p>
+          <p>Kali ini akan difokukan ke Web Design and Application yang didalamnya ada HTML CSS dan JavaScript, dengan memiliki fungsi-fungsi tersendiri. Contohnya sebegai berikut :</p>
+          <img src="https://media.licdn.com/dms/image/D4D12AQF7lMBGIwHUCw/article-inline_image-shrink_1500_2232/0/1680955326122?e=1695254400&v=beta&t=7zhhgBjLQad2n9_Ro3Ok9Q4SYyc2qFt-HYGgMMTHCRo" width="300" />
+          <ul>
+            <li><b>HTML</b> dianalogikan sebagai sebuah kerangka atau manekin</li>
+            <li>Agar kerangka lebih menarik, dapat diberi baju, celana, warna ukuran dan lain-lain, yang dibantu oleh <b>CSS</b></li>
+            <li>Manekin yang sudah menarik, agar lebih interaktif seperti berjalan, menyapa dan sebagainya dengan bantuan <b>JavaScript</b></li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Hello-World">
+        <header>Hello World</header>
+        <article>
+          <p>Membuat website sederhana dapat diawali dengan:</p>
+          <ul>
+            <li>
+              Membuat folder baru (bebas mau ditempatkan dimana saja), kemudian membuat file dengan nama index.html, pemberian nama file tidak dianjurkan dengan spasi (berpotensi eror) dan tujuan dengan .html yaitu otomatis berubah menjadi
+              text.
+            </li>
+            <li>Bisa dibuat langsung menggunakan notepad atau pun code editor, contohnya seperti:</li>
+            <code>Hello World!</code>
+            <li>Text diatas hanya menjadi plain text karena browser tidak tau apakah itu berupa code</li>
+          </ul>
+          <p>Supaya browser tahu dan membacanya sebagai halaman html, ada struktur dasar dari html yaitu:</p>
+          <img src="https://2.bp.blogspot.com/-QTvhD0dypeg/UmSBYlyaVKI/AAAAAAAAANY/dby2ZVs6BIU/s320/HTML.jpg" width="250" />
+          <p>Ada beberapa yang diperhatikan yakni:</p>
+          <ul>
+            <li>DOCTYPE html berfungsi ngasih tau browser akan membuat html dalam versi berapa</li>
+            <li>Apapun yang akan dituliskan harus berada didalam tag head dan tag body, tidak boleh diluar atau diantaranya.</li>
+            <li>Membuat website dengan tulisan "Hello World!" harus dibungkus dengan tag, semisal tag paragraf, contohnya</li>
+            <code> < p > Hello World! < / p ></code>
+          </ul>
+          <p>Diatas adalah contoh dari "Hello World!". Note penggunaan tag pada html tidak ada spasi, hanya di kondisi tertentu dan ada penambahan atribut lain misal class, id dll</p>
+        </article>
+      </section>
+      <section class="main-section" id="Code-Editor">
+        <header>Code Editor</header>
+        <article>
+          <p>Code editor merupakan wadah atau tempat untuk menuliskan code untuk membuat sesuatu atau project yang sedang berlangsung. Code editor ada banyak macamnya, contohnya sublime text, visual studio code dan lain-lain.</p>
+          <p>Mengapa tidak menggunakan notepad untuk menulis code? notepad sendiri sudah bisa buat nulis code tetapi punya banyak keterbatasan</p>
+          <p>Code editor juga memiliki kelebihan seperti:</p>
+          <ul>
+            <li>Menulis code yang lebih baik dibanding notepad</li>
+            <li>Memiliki segudang fitur seperti open in browser, auto correct, adanya extension yang memudahkan user dalam mengerjakan sesuatu</li>
+            <li>Bisa melihat eror dan sebagainya</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Tag">
+        <header>Tag</header>
+        <article>
+          <p>Tag adalah code yang ditulis dalam html, diawali dengan <, lalu namatag ,di akhiri >. Ada 2 jenis tag yaitu ada yang berpasangan ada yang tidak. Contohnya seperti</p>
+          <img src="https://fadilmuhdi.files.wordpress.com/2014/04/untitlxed.png" width="300" />
+          <p>Diatas adalah contoh dan penjelasan tag khususnya yang berpasangan, dibawah ini adalah contoh tag yang tidak berpasangan seperti:</p>
+          <code> < img /> </code>
+          <p>Selain itu, tag juga dapat mempunyai atribut, bahkan atau pun tidak. Contoh penggunaannya seperti diatas</p>
+          <p>Di bagian Hello World yang terdapat gambar dasar code html, ada tag head yang didalamnya ada beberapa tag lain seperti:</p>
+          <ul>
+            <li><code>title</code>, untuk memberi judul halaman pada browser</li>
+            <li><code>style</code>, untuk memberi style halaman pada html yang sedang dibuat berupa CSS</li>
+            <li><code>script</code>, untuk memberi bahasa pemrograman seperti JavaScript dengan penggunaan tertentu</li>
+            <li><code>meta</code>, untuk memberi deskripsi website</li>
+          </ul>
+          <p>Di bagian tag body, terdapat banyak beberapa tag contohnya seperti:</p>
+          <ul>
+            <li><code>h1...h6 p</code>, untuk membuat heading dan paragraf</li>
+            <li><code>img</code>, untuk menyisipkan gambar</li>
+            <li><code>a</code>, untuk hyperlink</li>
+            <li><code>list</code>, untuk buat list, ada yang secara <code>ul</code>, <code>ol</code> dan didalamnya ada <code>li</code></li>
+            <li><code>table</code>, untuk buat tabel, ada thead dan tbody</li>
+            <li><code>form</code>, untuk form, didalemnya ada tambahan tag lain seperti <code>input</code>, <code>input</code> dan lain-lain.</li>
+            <li><code>div span section</code>, untuk melakukan grouping dan tergantung kebutuhan yang akan dibuat</li>
+          </ul>
+          <p>Setiap tag mempunyai atribut global atau semuanya punya atribut ini yaitu:</p>
+          <ul>
+            <li>id dengan tanda # di CSS</li>
+            <li>class dengan tanda . di CSS</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Paragraf">
+        <header>Paragraf</header>
+        <article>
+          <p>HTML bisa membuat paragraf dengan menggunakan tag <code>p</code>, paragraf bisa dibuat sesuai dengan kebutuhan</p>
+          <p>Kemudian tag p juga bisa didukung dengan tag-tag lain seperti <code>b</code>, <code>i</code>, <code>u</code>, <code>strong</code> dan <code>em</code>. Contohnya sebagai berikut:</p>
+          <p>Ini adalah paragraf menggunakan <b>bold</b>, <i>italic</i> dan <u>underline</u>.</p>
+          <p>Ini adalah paragraf menggunakan <strong>strong</strong> dan <em>em</em>. Yang membedakan yaitu terdapat makna penekanan lebih dari strong dan em</p>
+        </article>
+      </section>
+      <section class="main-section" id="Heading">
+        <header>Heading</header>
+        <article>
+          <p>Didalam HTML terdapat heading, berawal dari h1 hingga h6 yang dimana semakin besar angkanya, heading tersebut menjadi kecil.</p>
+          <p>Penulisan heading tergantung kondisi atau proyek apa yang sedang dibuat. Semisal contohnya</p>
+          <h2>Judul Artikel</h2>
+          <p>isi artikel</p>
+          <h3>Sub judul artikel</h3>
+          <p>isi subartikel</p>
+        </article>
+      </section>
+      <section class="main-section" id="List">
+        <header>List</header>
+        <article>
+          <p>
+            HTML juga bisa membuat list. Baik dari list secara berurutan atau <code>ol</code>, tidak berurut <code>ul</code> , yang akan dibantu dengan <code>li</code> sebagai item list, sedangkan definisi list atau <code>dl</code>,
+            terdapat penambahan seperti <code>dt dd</code>
+          </p>
+          <p>Umumnya list digunakan untuk membuat form seperti checkbox dll. Contoh penggunaannya seperti ini.</p>
+          <p>Ini adalah contoh dari list ol</p>
+          <ol>
+            <li>To Do List Next Week</li>
+            <li>Coding</li>
+            <li>Digital Marketing</li>
+            <li>Apply Kerja</li>
+          </ol>
+          <p>Ini adalah contoh dari list ul</p>
+          <ul>
+            <li>To Do List Next Week</li>
+            <li>Read a book</li>
+            <li>English</li>
+            <li>Nonton film</li>
+          </ul>
+          <p>Ini adalah contoh dari list dl</p>
+          <dl>
+            <dt>HTML</dt>
+            <dd>Hyperetxt Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheet</dd>
+          </dl>
+        </article>
+      </section>
+      <section class="main-section" id="Image">
+        <header>Image</header>
+        <article>
+          <p>Bagaimana caranya menyisipkan atau menyipan gambar pada html?</p>
+          <p>Ada beberapa cara yang Bisa dilakukan</p>
+          <ul>
+            <li>
+              internal resource atau di folder itu sendiri, Contohnya sebagai berikut:
+              <img src="test1.jpeg" width="250" />
+            </li>
+            <li>external resource atau diluar dari folder, bisa dari folder lain dan hotlink. Contohnya seperti gambar analogi html, struktur dasar html.</li>
+          </ul>
+          <p>
+            image pada html juga bisa diberi nama dengan atribut <code>alt</code>, selain itu dapat juga dilakukan dengan style seperti <code>width</code> dan <code>height</code>. Width sendiri untuk mengatur lebar gambar, sedangkan height
+            untuk mengatur tinggi gambar. lalu penambahan width dan height bisa dengan px atau %
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Table">
+        <header>Table</header>
+        <article>
+          <p>
+            Table pada html digunakan untuk menampilkan data, sama halnya membuat tabel di ms excel dan word sesuai dengan kerjaan. ada satu hal lain yakni, jangan menggunakan tabel untuk membuat layout halaman (nanti dipelajari di CSS)
+          </p>
+          <p>Pada tabel terdapat :</p>
+          <ul>
+            <li>Box yang horizontal merupakan baris</li>
+            <li>Box yang vertikal merupakan kolom</li>
+            <li>Perpotongan baris dan kolom merupakan cell / data</li>
+            <li>Tiap baris dan kolom terdapat header</li>
+          </ul>
+          <p>Tabel dibuat menggunakan tag <code>table</code> dan mempunyai tag-tag pendukung lain seperti berikut:</p>
+          <ul>
+            <li>tag <code>tr</code> atau table row untuk membuat baris</li>
+            <li>tag <code>td</code> atau table data untuk membuat kolom</li>
+            <li>tag <code>th</code> atau table header buat header baik secara baris dan kolom</li>
+            <li>tag <code>thead</code> atau table header</li>
+            <li>tag <code>tbody</code> atau table body</li>
+          </ul>
+          <p>Syntax table nya seperti ini:</p>
+          <img src="Screenshot (821).png" width="200" />
+          <p>Contoh table sederhana seperti berikut:</p>
+          <table>
+            <tr>
+              <td>Baris 1, Kolom 1</td>
+              <td>Baris 1, Kolom 2</td>
+            </tr>
+            <tr>
+              <td>baris 2, kolom 1</td>
+              <td>baris 2, kolom 2</td>
+            </tr>
+          </table>
+          <p>Syntax table nya seperti ini:</p>
+          <img src="Screenshot (822).png" width="200" />
+          <p>Contoh table komplex seperti berikut</p>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Kolom 1</th>
+                <th>Kolom 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Baris 1</th>
+                <td>Baris 1, Kolom 1</td>
+                <td>Baris 1, Kolom 2</td>
+              </tr>
+              <tr>
+                <th>baris 2</th>
+                <td>baris 2, kolom 1</td>
+                <td>baris 2, kolom 2</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Jika ingin menambahkan border, space antar data dan lain-lain, bisa menggunakan atribut lain seperti:</p>
+          <ul>
+            <li><code>border</code> untuk memberi border di table</li>
+            <li><code>cellspacing</code> menambah jarak antar cell / data</li>
+            <li><code>cellpadding</code> menambah luas pada sebuah cell</li>
+          </ul>
+          <p>Contoh penggunaannya sebagai berikut:</p>
+          <table border="1" cellspacing="0" cellpadding="10">
+            <tr>
+              <td>Baris 1, Kolom 1</td>
+              <td>Baris 1, Kolom 2</td>
+            </tr>
+            <tr>
+              <td>baris 2, kolom 1</td>
+              <td>baris 2, kolom 2</td>
+            </tr>
+          </table>
+          <p>Selain itu ada 2 atribut lain seperti <code>colspan</code> dan <code>rowspan</code>. Dibawah ini contoh penggunaannya</p>
+          <table border="1" cellspacing="0" cellpadding="10">
+            <tr>
+              <td rowspan="3">rowspan 3</td>
+              <td colspan="2">colspan 2</td>
+            </tr>
+            <tr>
+              <td>2, 2</td>
+              <td>2, 3</td>
+            </tr>
+            <tr>
+              <td>3, 2</td>
+              <td>3, 3</td>
+            </tr>
+          </table>
+        </article>
+      </section>
+      <section class="main-section" id="Hyperlink">
+        <header>Hyperlink</header>
+        <article>
+          <p>Link adalah sebuah koneksi dari sebuah sumber ke sumber lain. Link pada html dibuat dengan tag <code>a</code>.</p>
+          <p>Tag <code>a </code> atau anchor/jangkar. Di analogikan seperti jangkar yang terhubung dengan dengan kapal, begitu juga pula dengan web pasti terhubung dengan sumber lain. Hyperlinkd dibagi menjadi 2 yaitu :</p>
+          <ul>
+            <li>
+              External link, yang dimana menghubungkan dengan link luar. Misalnya seperti, saya sedang belajar coding baik HTML CSS dan JavaScript di <a href="https://www.freecodecamp.org/">freeCodeCamp</a> dan di Web Programming UNPAS di
+              <a href="https://www.youtube.com/@sandhikagalihWPU">Youtube</a>
+            </li>
+            <li>Internal link, yang dimana menghubungkan dengan link di file yang sama. Contohnya seperti penggunaan navbar dibagian paling atas</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Form">
+        <header>Form</header>
+        <article>
+          <p>Di html juga bisa membuat form. Form itu sebuah elemen pada html yang digunakan untuk mengelola data yang dari input oleh user.</p>
+          <p>
+            Form sendiri digunakan berbagai macam kebutuhan seperti, form registrasi, form login dan lain-lain, bahkan terdapat juga ada radio button, dropdown maupun checkbox. Form sendiri dibuat dengan tag <code>form</code> adapun tag
+            atau elemen yang membantu pembuatan form yaitu:
+          </p>
+          <ul>
+            <li><code>input</code>, bisa membuat textfield radiobutton ataupun dropdown</li>
+            <li><code>textarea</code>, mirip seperti textfield tetapi lebih besar biasanya untuk beri pesan</li>
+            <li><code>select</code>, membuat dropdown atau combobox</li>
+            <li><code>button</code>, tombol untuk mengirimkan data atau yang lain</li>
+            <li><code>label</code>, untuk menandai sebuah elemen input</li>
+          </ul>
+          <p>Input sendiri memiliki atribut yang banyak seperti text, password, radio, checkbox dll</p>
+          <p>
+            Kali ini saya akan membuat form yang lebih komplex seperti final test di freeCodeCamp dengan nama <a href="formv1.html">formv1</a>, ini hanya menggunakan html tidak ada css, agar pemahaman lebih baik, dihalaman yang berbeda.
+          </p>
+          <p>Sedangkan ini contoh membuat form sedehana seperti:</p>
+          <form>
+            <label for="username">username : </label>
+            <input type="text" id="username" />
+            <br />
+            <label for="password">password : </label>
+            <input type="password" id="password" />
+            <br />
+            <input type="radio" id="male" name="sex" /><label for="male">male</label> <input type="radio" id="female" name="sex" /><label for="female">female</label>
+            <br />
+            <input type="checkbox" id="coding" /><label for="coding">coding</label> <input type="checkbox" id="digmar" /><label for="digmar">digmar</label> <input type="checkbox" id="gaming" /><label for="gaming">gaming</label>
+            <br />
+            <select>
+              <option>Select</option>
+              <option>UNPAS</option>
+              <option>freeCodeCamp</option>
+              <option>Other</option>
+            </select>
+            <br />
+            <textarea></textarea>
+            <br />
+            <button type="submit">Submit</button>
+          </form>
+          <p>Form tersebut masih sederhana sekali dan berantakan, untuk bisa membuatnya lebih bagus dan menarik, perlu penambahan CSS.</p>
+          <p>Terimakasih sudah membaca documentation tentang HTML ini masih banyak salah dan perbaikan.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

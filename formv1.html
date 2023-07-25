@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base Form final test freeCodeCamp</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Herbavet Survey Form</h1>
+        <p id="description">Thank you for taking time to help us improve all products</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name" for="name">Name</label>
+          <input id="name" type="text" name="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label id="email" for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label id="number" for="number">Age</label>
+          <input id="number" type="number" name="number" min="12" max="70" placeholder="Age" required />
+        </div>
+        <div class="form-group">
+          <p>Which option best describe your current?</p>
+          <select id="dropdown" name="role" required>
+            <option disabled selected value>Select your current role</option>
+            <option value="student">Student</option>
+            <option value="college">College</option>
+            <option value="job">Full TIme Job</option>
+            <option value="housewife">Housewife</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend Herbavet to your friends?</p>
+          <label><input name="user-recommend" value="absolutely" type="radio" checked />Absolutely </label>
+          <label><input name="user-recommend" value="maybe" type="radio" checked />Maybe </label>
+          <label><input name="user-recommend" value="not-sure" type="radio" checked />Not sure </label>
+        </div>
+        <div class="form-group">
+          <p>Which product did you use in your business?</p>
+          <label><input name="animal" value="cats" type="checkbox" />Cats </label>
+          <label><input name="animal" value="poultry" type="checkbox" />Poultry </label>
+          <label><input name="animal" value="cattle" type="checkbox" />Cattle </label>
+          <label><input name="animal" value="diary" type="checkbox" />Diary </label>
+        </div>
+        <div class="form-group">
+          <p>Which would you like to see improved?</p>
+          <label><input name="product" value="vitamin-cat" type="checkbox" />Vitamin for cat </label>
+          <label><input name="product" value="worm-cat" type="checkbox" />Worm for cat </label>
+          <label><input name="product" value="diarrhea-cat" type="checkbox" />Diarrhea for cat </label>
+          <label><input name="product" value="super-gireng" type="checkbox" />Super Gireng </label>
+          <label><input name="product" value="jampi" type="checkbox" />Jampi </label>
+          <label><input name="product" value="lemon" type="checkbox" />Lemon Sapi </label>
+          <label><input name="product" value="boom" type="checkbox" />Boom Cacing </label>
+          <label><input name="product" value="super-starter" type="checkbox" />Super Starter R </label>
+          <label><input name="product" value="starter-susu" type="checkbox" />Starter Susu </label>
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
